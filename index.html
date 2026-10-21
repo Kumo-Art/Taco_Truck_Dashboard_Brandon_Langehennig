@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiah's Taco Truck</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-teal-700">
+
+    <h1 class="m-4 text-2xl font-bold">Isaiah's Taco Truck</h1>
+
+    <p id="status" class="m-4">Closed</p>
+     
+    <button id="open-button" class="border px-3 py-1 m-4">Open the truck</button>
+   
+
+    <div class="my-4">
+        <label for="new-location" class="block m-4 text-2xl font-bold ">Today's Location</label>
+        <input id="new-location" type="text" class="border p-1 m-4">
+        <button id="set-button" class="border px-3 py-1">Set</button>
+    </div>
+
+    <ul id="Location-list" class="list-disc pl-5"></ul>
+    
+    <div>
+        <h2 class="m-4 text-2xl font-bold">Add to Menu</h2>
+        <div>
+       <label for="new-item" class="block m-4 text-xl font-semibold ">Item Name</label>
+        <input id="new-item" type="text" class="border p-1 m-4">
+        <label for="about-item" class="block m-4 text-xl font-semibold ">Description</label>
+        <input id="about-item" type="text" class="border p-12 m-4">
+        </div>
+        <button id="add-button" class="border px-3 py-1">Add</button>
+    </div>
+         <h2 class="m-4 text-2xl font-bold">Menu</h2>
+        <ul id="menu-list" class="list-disc pl-5"></ul>
+
+        <h3 id="total-sold" class="m-4 text-2xl font-bold">Total Sold: </h3>
+    <script src="script.js"></script>
+</body>
+
+</html>
