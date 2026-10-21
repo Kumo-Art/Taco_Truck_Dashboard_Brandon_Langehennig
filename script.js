@@ -35,7 +35,7 @@ openButton.addEventListener("click", function (){
 const location = document.createElement("li");
       location.textContent = newLocation;
 
-setButton.addEventListener("click", function (event){
+location.addEventListener("click", function (event){
       console.log(event.target.tagName);
       locationList.appendChild(location);
 
