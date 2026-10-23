@@ -18,6 +18,7 @@ const totalSold = document.getElementById("total-sold");
 const addButton = document.getElementById("add-button");
 const newItem = document.getElementById("new-item");
 const description = document.getElementById("description");
+const locationToday = document.getElementById("location-today");
 // ----- functions -----
 
 console.log(document);
@@ -45,7 +46,7 @@ console.log(document);
 
 // ----- listeners -----
 
-openButton.addEventListener("click", function (){
+openButton.addEventListener("click", function () {
       statusLine.textContent = "Open";
       statusLine.classList.add("open");
 });
@@ -53,13 +54,14 @@ openButton.addEventListener("click", function (){
 
 
 
-setButton.addEventListener("click", function (){
-
-   const loc = document.createElement("h2");
+setButton.addEventListener("click", function () {
+console.log("this works");
+   const loc = document.createElement("li");
    loc.textContent = newLocation.value;
-   newLocation.appendChild(loc);
-   newItem.value = "";
-   
+   locationToday.appendChild(loc);
+   newLocation.value = "";
+
+   setButton.disabled = true;
 
 });
 
