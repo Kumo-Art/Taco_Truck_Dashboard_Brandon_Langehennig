@@ -5,7 +5,8 @@
 
 
 .sold-out {
-    
+    color: red;
+    text-decoration-line: line-through;
 }
 
 
