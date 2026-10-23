@@ -1,12 +1,6 @@
 // ----- data -----
 
-const menu = [
-  { name: "Carne asada",              price: 3.50, spicy: false, soldOut: false },
-  { name: "Al pastor",                price: 3.75, spicy: true,  soldOut: false },
-  { name: "Chicken, when we have it", price: 4.50, spicy: false, soldOut: true  },
-  { name: "Just the meat",            price: 3.00, spicy: false, soldOut: false }
-];
-
+const menu = [];
 
 
 
@@ -19,6 +13,9 @@ const setButton = document.getElementById("set-button");
 const locationList = document.getElementById("location-list");
 const menuList = document.getElementById("menu-list");
 const totalSold = document.getElementById("total-sold");
+const addButton = document.getElementById("add-button");
+const newItem = document.getElementById("new-item");
+const description = document.getElementById("description");
 // ----- functions -----
 
 
@@ -32,14 +29,7 @@ openButton.addEventListener("click", function (){
       statusLine.classList.add("open");
 });
 
-const location = document.createElement("li");
-      location.textContent = newLocation;
 
-location.addEventListener("click", function (event){
-      console.log(event.target.tagName);
-      locationList.appendChild(location);
-
-});
 
 
 newLocation.addEventListener("input", function (){

@@ -26,16 +26,17 @@
 
     <ul id="Location-list" class="list-disc pl-5"></ul>
     
-    <div>
-        <h2 class="m-4 text-2xl font-bold">Add to Menu</h2>
-        <div>
-       <label for="new-item" class="block m-4 text-xl font-semibold ">Item Name</label>
-        <input id="new-item" type="text" class="border p-1 m-4">
-        <label for="about-item" class="block m-4 text-xl font-semibold ">Description</label>
-        <input id="about-item" type="text" class="border p-12 m-4">
-        </div>
-        <button id="add-button" class="border px-3 py-1">Add</button>
-    </div>
+   <form id="menu-form" class="my-4">
+  <label for="new-item" class="block mb-1 mx-4">Item</label>
+  <input id="new-item" type="text" class="border p-2 mx-4">
+
+  <label for="description" class="block mb-1 mt-2 mx-4">description</label>
+  <input id="description" type="text" class="border p-12 mx-4">
+
+
+  <button id="add-button" type="submit" class="border px-3 py-1 mt-2">Add item</button>
+</form>
+
          <h2 class="m-4 text-2xl font-bold">Menu</h2>
         <ul id="menu-list" class="list-disc pl-5"></ul>
 
