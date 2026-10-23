@@ -40,14 +40,7 @@ console.log(document);
 
 
 
-function currentLocation() {
-   const loc = document.createElement("h2");
-   loc.textContent = newLocation.value;
-   newLocation.appendChild(loc);
 
-   
-
-}
 
 
 // ----- listeners -----
@@ -61,7 +54,13 @@ openButton.addEventListener("click", function (){
 
 
 setButton.addEventListener("click", function (){
-    currentLocation();
+
+   const loc = document.createElement("h2");
+   loc.textContent = newLocation.value;
+   newLocation.appendChild(loc);
+   newItem.value = "";
+   
+
 });
 
 
